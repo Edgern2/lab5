@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 import time
 from threading import Thread
+=======
+>>>>>>> 0beba2c762caea49e0109117de80c3d3c0591591
 import hal.hal_lcd as LCD
 import hal.hal_keypad as keypad
 import hal.buzzer as buzz
 
+<<<<<<< HEAD
 #Variables
 #Attempt data
 attempt = 0
@@ -16,11 +20,17 @@ input = []
 status = False
 
 
+=======
+
+#Safe password
+password = [6969]
+>>>>>>> 0beba2c762caea49e0109117de80c3d3c0591591
 
 #init lcd
 lcd = LCD.lcd()
 lcd.lcd_clear()
 
+<<<<<<< HEAD
 #init buzzer
 buzz.init()
 
@@ -89,4 +99,13 @@ def main():
 
 if __name__=="__main__":
     main()
+=======
+def main():
+	lcd.lcd_display_string("Safe Lock", 1)
+	lcd.lcd_display_string("Enter PIN: ", 2)
+
+
+
+
+>>>>>>> 0beba2c762caea49e0109117de80c3d3c0591591
 
